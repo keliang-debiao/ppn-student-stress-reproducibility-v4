@@ -78,28 +78,3 @@ low stress: 76
 moderate stress: 73
 high stress: 71
 ```
-
-## Data and Code Availability Text
-
-Before manuscript submission, replace the placeholder below with the final public or anonymous-review repository URL:
-
-```text
-[ANONYMIZED_REPOSITORY_URL_TO_BE_INSERTED_BEFORE_RESUBMISSION]
-```
-
-Suggested final sentence:
-
-```text
-The source code, exact preprocessing scripts, random seeds, hyperparameter configuration files, and train-test split indices are available in an anonymized repository: <URL>.
-```
-
-## Publishing to GitHub
-
-This machine must have GitHub authentication before a remote repository can be created. If `GITHUB_TOKEN` is set to a personal access token with repository creation permission, run:
-
-```powershell
-$env:GITHUB_TOKEN = "<your-token>"
-.\publish_to_github.ps1 -RepoName "ppn-student-stress-reproducibility-v4"
-```
-
-The script creates the GitHub repository through the GitHub API and pushes `main` without storing the token in the Git remote URL.
